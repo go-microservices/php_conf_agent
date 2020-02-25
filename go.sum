@@ -1,0 +1,7 @@
+github.com/GanymedeNil/go-structure-to-php-array v0.0.0-20190922145731-0f2a62170d7f h1:oYn0oBZ+ZyOS5YAdUFpL4yciv4yw8Ndjc061XLdOrh8=
+github.com/GanymedeNil/go-structure-to-php-array v0.0.0-20190922145731-0f2a62170d7f/go.mod h1:qrtvLeD6QbW8jkzje5j82gj9RHVG0MM9ezGOO/a7dDY=
+github.com/howeyc/fsnotify v0.9.0 h1:0gtV5JmOKH4A8SsFxG2BczSeXWWPvcMT0euZt5gDAxY=
+github.com/howeyc/fsnotify v0.9.0/go.mod h1:41HzSPxBGeFRQKEEwgh49TRw/nKBsYZ2cF1OzPjSJsA=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v3 v3.0.0-20200121175148-a6ecf24a6d71 h1:Xe2gvTZUJpsvOWUnvmL/tmhVBZUmHSvLbMjRj6NUUKo=
+gopkg.in/yaml.v3 v3.0.0-20200121175148-a6ecf24a6d71/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
