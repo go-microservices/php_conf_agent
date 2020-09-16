@@ -10,6 +10,7 @@ import (
 func Write(name string, data map[string]string) {
 	arrayData := "<?php\n\nreturn "
 	arrayData += go_structure_to_php_array.StructTOPhpArray(data)
+        arrayData += ";"
 	err := ioutil.WriteFile(name+".php", []byte(arrayData), 0777)
 	if err != nil {
 		log.Fatal(err)
