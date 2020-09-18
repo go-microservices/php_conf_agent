@@ -25,7 +25,15 @@ func ConfigCache(configs Configs) (body map[string]string) {
 		config.Conf.Address, configs.AppId, config.Conf.ClusterName, configs.Namespace)
 	if config.Conf.Ip != "" {
 		url += "?ip=" + config.Conf.Ip
+	} else if config.Conf.AutoIp == 1 {
+		ip, err := util.ExternalIP()
+		if err != nil {
+			log.Println(err)
+		} else {
+			url += "?ip=" + ip.String()
+		}
 	}
+
 	response, err := http.Get(url)
 	if err != nil {
 		log.Fatal("ConfigCache Get#" + err.Error())
@@ -83,6 +91,13 @@ func ConfigFile(configs Configs) (string, map[string]string) {
 		config.Conf.Address, configs.AppId, config.Conf.ClusterName, configs.Namespace, configs.ReleaseKey)
 	if config.Conf.Ip != "" {
 		url += "&ip=" + config.Conf.Ip
+	} else if config.Conf.AutoIp == 1 {
+		ip, err := util.ExternalIP()
+		if err != nil {
+			log.Println(err)
+		} else {
+			url += "?ip=" + ip.String()
+		}
 	}
 	response, err := http.Get(url)
 	if err != nil {
