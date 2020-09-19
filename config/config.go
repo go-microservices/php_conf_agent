@@ -14,6 +14,7 @@ type Config struct {
 	Type        int    `yaml:"type"`
 	Address     string `yaml:"address"`
 	Ip          string `yaml:"ip"`
+	AutoIp      int    `yaml:"autoIp"`
 	Configs     []struct {
 		Path      string   `yaml:"path"`
 		AppId     string   `yaml:"appId"`

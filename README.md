@@ -23,6 +23,7 @@ clusterName: dev # 集群
 type: 2 # 请求配置中心类型,1 为每30秒请求一次配置中心缓存数据;2 为实时变更推送
 address: http://localhost:8080 # Apollo 服务接口地址 
 ip: 10.12.1.1 # 应用部署的机器ip 这个参数是可选的，用来实现灰度发布。
+autoIp: 1 # 1 表示开启，是否自动获取部署的机器ip，上面指定 ip 参数优先级更高 当然这个参数也是可选的，用来实现灰度发布。
 configs:
 -
   path: /data/www/a.example.com/config # 生成的配置文件所存放的目录 配置文件名称以 namespace 来命名
